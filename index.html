@@ -7,6 +7,7 @@
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="PasswordGenerator.css">
+   
 </head>
 <body>
         <h1>Password Generator</h1>
@@ -15,21 +16,23 @@
                 <h2>Generate a Random Password</h2>   
                 <input type="text" id="display">
              <br></br>
+                <input type="range" min="8" max="128" name="slider" id="slider">
                     <div class="container">
                          <div class="row">
                              <div class="col-md-4">
-                                  <button type="button" class="btn btn-danger" id="submit" onclick="Function()">Generate Password</button>
+                                  <button type="button" class="btn btn-danger" id="submit" onclick="generate()">Generate Password</button>
                               </div>
                               <div class="col-md-4"></div>
                                  <div class="col-md-4">
-                                    <button type="button" class="btn btn-light" id="submit" onclick="Function()">Copy to Clipboard</button> 
-                              </div>
+                                    <button type="button" class="btn btn-light" id="submit" onclick="copyToClipBoard()">Copy to Clipboard</button> 
+                                </div>
+                                <br></br>
+                              <div id="length"></div>
                             </div>  
                     </div> 
                  </div>
             </div>
         </div>
-    <script src= "/PasswordGenerator.js">
-    </script>
+ <script src= "script.js"></script>
 </body>
 </html>
