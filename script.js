@@ -8,12 +8,13 @@ function generate(){
 
  var values ="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!#$%^&*?/()+_-{}";
 
+
   var password ='';
 
   /// creating for loop for password characters
 
   for(var i = 1; i <= length; i++) {
-      password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
+      password = password + values.charAt(Math.floor(Math.random() * (values.length - 1)));
   }
     /// add password to input box
 
@@ -45,3 +46,6 @@ function copyToClipBoard(){
     } 
 
     
+////creating checkbox functions responsive to user input
+
+
