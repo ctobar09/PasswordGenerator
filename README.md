@@ -6,4 +6,4 @@ These criteria include length of password, use of special characters, use of num
 
 The user can then copy this password to their clipboard. 
 
-Find the Password Generator deployed at: 
+Find the Password Generator deployed at: https://ctobar09.github.io/PasswordGenerator/.
